@@ -1,0 +1,19 @@
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+  <!-- Live Stock Price Chart -->
+  <div class="bg-white shadow-md rounded-md p-4">
+    <h2 class="text-lg font-semibold mb-2">Price of BTC/USDT</h2>
+    <div class="rounded-md">
+      <!-- Chart Goes Here -->
+      <div echarts [options]="options"></div>
+    </div>
+  </div>
+
+  <!-- Historical Trends Chart -->
+  <div class="bg-white shadow-md rounded-md p-4">
+    <h2 class="text-lg font-semibold mb-2">Trade Volume of BTC/USDT</h2>
+    <div class="rounded-md">
+      <!-- Chart Goes Here -->
+      <div echarts [options]="volumeOptions"></div>
+    </div>
+  </div>
+</div>
